@@ -1,9 +1,52 @@
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Exo:300,400,600);
 
 // Variables
 @import "variables";
+@import "bootstrap_variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+*, html, body {
+  font-family: 'Exo', sans-serif;
+}
+
+#main {
+  margin-top: 86px;
+}
+
+#map-canvas{
+  height: calc(100vh - 86px);
+  width: 100vw;
+  border: 0;
+}
+
+.panel-auth {
+  margin-top: 40px;
+}
+
+.search-container {
+  position: absolute;
+  top: 96px;
+  left: 111px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  padding: 10px;
+  border-radius: 3px;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.search-input {
+  border: 0 !important;
+  box-shadow: none;
+
+  &:focus {
+    border: 0 !important;
+    box-shadow: none;
+  }
+}
