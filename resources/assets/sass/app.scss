@@ -1,24 +1,22 @@
-
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Exo:300,400,600);
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 // Variables
 @import "variables";
 @import "bootstrap_variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
-*, html, body {
-  font-family: 'Exo', sans-serif;
+*,
+html,
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 #main {
-  margin-top: 86px;
+  margin-top: 56px;
 }
 
-#map-canvas{
-  height: calc(100vh - 86px);
+#map-canvas {
+  height: calc(100vh - 56px);
   width: 100vw;
   border: 0;
 }
@@ -29,24 +27,145 @@
 
 .search-container {
   position: absolute;
-  top: 96px;
+  top: 66px;
   left: 111px;
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   padding: 10px;
   border-radius: 3px;
-
   .form-group {
     margin-bottom: 0;
   }
 }
 
+.filter-container {
+  position: absolute;
+  top: 66px;
+  left: 600px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  padding: 10px;
+  border-radius: 3px;
+  max-height: 600px;
+  overflow-y: scroll;
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.result-container {
+  position: absolute;
+  top: 126px;
+  left: 111px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  border-radius: 3px;
+  max-height: 540px;
+  overflow-y: scroll;
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.detail-container {
+  position: absolute;
+  top: 96px;
+  left: 111px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  padding: 15px;
+  border-radius: 3px;
+  max-height: 600px;
+  overflow-y: scroll;
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.detail {
+  display: block;
+}
+
 .search-input {
   border: 0 !important;
   box-shadow: none;
-
+  font-size: 20px;
   &:focus {
     border: 0 !important;
     box-shadow: none;
+  }
+}
+
+.results {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  width: 107%;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #f5f5f5;
+  }
+  .thumbnail-image {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+  .arrow-next {
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    color: #505050;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    color: #505050;
+  }
+}
+
+.result-search {
+  display: block;
+}
+
+.carousel-park {
+  margin: -15px;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-bottom: 5px;
+}
+
+.clearable {
+  background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+  border: 1px solid #999;
+  padding: 3px 18px 3px 4px;
+  /* Use the same right padding (18) in jQ! */
+  border-radius: 3px;
+  transition: background 0.4s;
+  /* (jQ) Show icon */
+  .x {
+    background-position: right 5px center;
+  }
+  /* (jQ) hover cursor style */
+  .onX {
+    cursor: pointer;
+  }
+  /* Remove IE default X */
+  &::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+.amenities {
+  .fa {
+    margin-right: 3px;
   }
 }
