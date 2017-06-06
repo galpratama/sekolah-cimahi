@@ -294,7 +294,6 @@
                 itemSelector: '.results',
                 layoutMode: 'fitRows',
                 filter: function() {
-                    console.log('filtering');
                     var $this = $(this);
                     var searchResult = qsRegex ? $this.text()
                         .match(qsRegex) : true;
@@ -318,6 +317,7 @@
                 for (var prop in filters) {
                     filterValue += filters[prop];
                 }
+                console.log(filterValue);
                 buttonFilter = filterValue;
                 // set filter for Isotope
                 $container.isotope();

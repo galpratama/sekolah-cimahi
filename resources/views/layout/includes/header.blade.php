@@ -13,10 +13,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('') }}">Peta</a></li>
-                <li><a href="{{ url('') }}">Statistik</a></li>
-                <li><a href="{{ url('about') }}">Tentang</a></li>
-                <li><a href="{{ url('contact') }}">Kontak</a></li>
+                {{--<li><a href="{{ url('') }}">Peta</a></li>--}}
+                {{--<li><a href="{{ url('') }}">Statistik</a></li>--}}
+                {{--<li><a href="{{ url('about') }}">Tentang</a></li>--}}
+                {{--<li><a href="{{ url('contact') }}">Kontak</a></li>--}}
                 <li class="dropdown hide">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">

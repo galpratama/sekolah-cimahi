@@ -12,7 +12,10 @@
 */
 
 Route::get('/', 'AppController@index');
+Route::get('/details/{school_id}/{slug?}', 'AppController@details');
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
