@@ -1,6 +1,6 @@
 # Sekolah Cimahi
 Aplikasi Web GIS Data Sekolah di Kota Cimahi (SekolahCimahi). Aplikasi sistem informasi geografis ini merupakan sistem dimana pengguna dapat mencari informasi tentang sekolah yang ada di Kota Cimahi, mulai dari SD, SMP, SMA, sampai SMK. 
-Pengguna pun dapat menyaring hasil pencarian sesuai dengan Jenis Sekolah, Tipe Sekolah, Kecamatan, Kelurahan, Akreditasi, dan Fasilitas. Tautan source code project GIS ini dapat anda lihat di tautan : https://bitbucket.org/galpratama/sekolahcimahi/
+Pengguna pun dapat menyaring hasil pencarian sesuai dengan Jenis Sekolah, Tipe Sekolah, Kecamatan, Kelurahan, Akreditasi, dan Fasilitas.
 
 ## System Requirement
 - Git (for cloning project)
